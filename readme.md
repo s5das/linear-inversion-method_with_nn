@@ -1,7 +1,7 @@
 ## Current progress：
-1. inverse method 从age ele数据求解 exhumation rates（Beta）
+1. inverse method 利用$age$以及$ele$数据求解 $exhumation rates$（Beta）
 
-2. 利用exhumation rates和nangs方法完成对微分方程的求解得到T
+2. 利用$exhumation rates$和nangs方法完成对微分方程的求解得到$Tm(t,z)$
 
 ## Installation
 
@@ -17,8 +17,8 @@
 
 * inverse_method.ipynb 利用现有数据集测试inverse_method 
 
-* solve_temprature.ipynb 利用nangs求解温度方程得到Tm(t,z)
+* solve_temprature.ipynb 利用nangs求解温度方程得到$Tm(t,z)$
 
 ## todo:
 1. 修正inverse_method中数据集使用问题
-1. 利用神经网络输入T得到model parameter covariance matrix，C
+1. 利用神经网络输入$T$得到model parameter covariance matrix，$C$
