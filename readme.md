@@ -19,6 +19,6 @@
 
 * solve_temprature.ipynb 利用nangs求解温度方程得到 $Tm(t,z)$ 
 
-## todo:
+## Todo:
 1. 修正inverse_method中数据集使用问题
-1. 利用神经网络输入$T$得到model parameter covariance matrix，  $C$ 
+1. 利用神经网络输入 $T(t,z)$ 得到model parameter covariance matrix，  $C$ 
