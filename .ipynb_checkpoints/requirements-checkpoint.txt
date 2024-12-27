@@ -1,6 +1,0 @@
-matplotlib==3.9.2
-nangs==2021.12.6
-numpy==1.26.4
-numpy-quaternion==2024.0.3
-pandas==2.2.2
-scipy==1.14.1
