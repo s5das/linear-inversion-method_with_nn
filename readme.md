@@ -35,7 +35,7 @@ $$ A \cdot \text { temp }^{n+1}=f $$
 
 f计算相关参数如下：
 
-$$ \lambda=\kappa \times dt/(2.*(dz**2)) $$
+$$ \lambda=\kappa \times dt/(2 \times (dz^2)) $$
 
 $$ \alpha=e\times dt/(4\times dz) $$
 
