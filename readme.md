@@ -29,39 +29,22 @@ glide_python文件夹
 dz mz
 temp(mz)
 * 三角矩阵方程求解更新temp
-$$A \cdot \text { temp }^{n+1}=f$$
+
+$$ A \cdot \text { temp }^{n+1}=f $$
 
 f计算相关参数如下：
-$$
-   \lambda=\kappa \times dt/(2.*(dz**2))\\
-
-  \alpha=e\times dt/(4\times dz)\\
- 
-   a=(\alpha-\lambda)\\
- 
-   b=(1+(2\times \lambda))\\
-   
-   c=-1\times(\lambda+\alpha)\\
-$$
+$$\lambda=\kappa \times dt/(2.*(dz**2))\\ \alpha=e\times dt/(4\times dz)\\ a=(\alpha-\lambda)\\ b=(1+(2\times \lambda))\\ c=-1\times(\lambda+\alpha)\\$$
 * 结合了时间方向的向后差分和空间方向的中心差分，用来计算温度随时间的变化率
-$$
-\frac{d T}{d t} \approx \frac{T{\mathrm{age}}(z)-T{\mathrm{pr}}(z)}{d t}+\frac{T{\mathrm{pr}}(z+\Delta z)-T{\mathrm{pr}}(z)}{\Delta z} \cdot \frac{\text { tdotdist }}{\Delta z}
-$$
+$$\frac{d T}{d t} \approx \frac{T{\mathrm{age}}(z)-T{\mathrm{pr}}(z)}{d t}+\frac{T{\mathrm{pr}}(z+\Delta z)-T{\mathrm{pr}}(z)}{\Delta z} \cdot \frac{\text { tdotdist }}{\Delta z}$$
 
 * Dodson 方程根具不同system类别定义相关参数
-$$
-T_{c}=\frac{E_{a}}{R \ln \left(g \tau D_{0} / a^{2}\right)}-273
-$$
+$$T_{c}=\frac{E_{a}}{R \ln \left(g \tau D_{0} / a^{2}\right)}-273$$
 
 
 * 用Tc(z,t)和temp(z,t)交点求解Tc以及zc
-$$
-
-M=\frac{d z}{T_{c}(i)-T_{c}(i-1)}\\
+$$M=\frac{d z}{T_{c}(i)-T_{c}(i-1)}\\
 P=\frac{d z}{T(i)-T(i-1)}\\
-T_{c}=\frac{M T_{c, i-1}-P T_{i-1}}{M-P}
-
-$$
+T_{c}=\frac{M T_{c, i-1}-P T_{i-1}}{M-P}$$
 
 
 ### solve_inverse
@@ -77,11 +60,6 @@ $$
 
 $$C_{M}(\mathrm{i}, \mathrm{j})=\sigma^{2} \exp \left(-\left(\frac{d}{L}\right)^{2}\right)$$
 * 计算数据点处
-$$
-H = GA'(GCG'+Cee)
-$$
-$$
-edot=H\times (zc-ta\times exp(espilon))
-$$
+$$H = GA'(GCG'+Cee)\\ edot=H\times (zc-ta\times exp(espilon))$$
 
 ## Todo:
